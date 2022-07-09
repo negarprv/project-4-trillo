@@ -1,0 +1,48 @@
+@mixin global-reset {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == bp-smallest {
+    @media only screen and (max-width: 31.25em) {
+      @content; // 500px
+    }
+  }
+
+  @if $breakpoint == bp-small {
+    @media only screen and (max-width: 37.5em) {
+      @content; // 600px
+    }
+  }
+
+  @if $breakpoint == bp-medium {
+    @media only screen and (max-width: 56.25em) {
+      @content; // 900px
+    }
+  }
+
+  @if $breakpoint == bp-large {
+    @media only screen and (max-width: 68.75em) {
+      @content; // 1100px
+    }
+  }
+
+  @if $breakpoint == bp-largest {
+    @media only screen and (max-width: 75em) {
+      @content; // 1200px
+    }
+  }
+}

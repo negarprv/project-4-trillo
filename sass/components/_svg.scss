@@ -1,0 +1,56 @@
+///////////////////////////////
+//////Search SVGs
+
+.search {
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+///////////////////////////////
+//////User-nav SVGs
+
+.user-nav {
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-grey-dark-2);
+  }
+}
+
+///////////////////////////////
+//////Side nav SVGs
+
+.side-nav {
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor;
+    margin-right: 2rem;
+
+    @include respond(bp-small) {
+      margin-right: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+///////////////////////////////
+//////Overview SVGs
+
+.overview {
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
+  }
+}
